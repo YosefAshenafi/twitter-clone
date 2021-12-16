@@ -1,0 +1,14 @@
+.home{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-shrink: 1;
+    /* max-width: 1300px; */
+}
+.home_sidebar{
+    flex: 0.3;
+    flex-grow: 1;
+}
+.home_feed{
+    flex:0.4;
+}

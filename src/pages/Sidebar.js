@@ -10,9 +10,9 @@ import ReorderIcon from "@material-ui/icons/Reorder";
 import PermIdentityIcon from "@material-ui/icons/PermIdentity";
 import MoreHorizIcon from "@material-ui/icons/MoreHoriz";
 import { Button } from "@material-ui/core";
-import './Sidebar.css';
+import "./Sidebar.css";
 function Sidebar() {
-	return (
+    return (
         <div className="sidebar">
             <TwitterIcon className="sidebar__twitterIcon" />
             <SidebarOptions active title="Home" Icon={HomeIcon} />

@@ -34,4 +34,38 @@
     border: none;
     padding: 20px;
     outline: none;
+    color: red;
+}
+::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: lightgray;
+    opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: lightgray;
+}
+
+::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: lightgray;
+}
+.tweetBox__tweetMediaIcons {
+    display: flex;
+    flex: 1;
+    color: var(--twitter-color);
+    width: 200px !important;
+    margin-left: 100px;
+}
+.tweetBox__Icons {
+    margin-left: 10px;
+}
+.tweetBox__tweetButtonWrapper {
+    flex: 3;
+}
+.tweetBox__tweetMedia {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }

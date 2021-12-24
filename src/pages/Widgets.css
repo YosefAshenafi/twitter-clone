@@ -1,7 +1,7 @@
-.widgets{
+.widgets {
     flex: 0.3;
 }
-.widgets__input{
+.widgets__input {
     display: flex;
     align-items: center;
     background-color: var(--twitter-background);
@@ -15,17 +15,22 @@
     background-color: var(--twitter-background);
     outline: none;
 }
-.widgets__searchIcons{
+.widgets__searchIcons {
     color: gray;
 }
-.widgets__widgetContainer{
+.widgets__widgetContainer {
     margin-top: 15px;
     margin-left: 20px;
     padding: 20px;
     background-color: #f5f8fa;
     border-radius: 20px;
 }
-.widgets__widgetContainer >h2{
+.widgets__widgetContainer > h2 {
     font-size: 18px;
     font-weight: 800;
+}
+@media screen and (max-width: 1005px) {
+    .widgets {
+        display: none !important;
+    }
 }

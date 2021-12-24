@@ -1,0 +1,157 @@
+.login {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+}
+.login_Logo {
+    flex: 6;
+    background-image: url("../images/logoBackground.png");
+    display: flex;
+    background-size: contain;
+    height: 100vh;
+    align-items: center !important;
+    justify-content: center !important;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+    background-attachment: fixed;
+}
+.login__twitterIcon {
+    font-size: 400px !important;
+    color: white;
+    z-index: 999;
+}
+.login__buttons {
+    flex: 5;
+}
+.login__buttons {
+    background-color: rgb(255, 255, 255);
+    height: 100vh;
+}
+.login__buttons {
+    display: flex;
+    flex-direction: column;
+}
+.login__twitterIconRight {
+    color: rgb(29, 155, 240);
+    padding: 30px 30px 0px 30px;
+    font-size: 50px !important;
+}
+.login__title {
+    margin-left: 30px;
+    font-size: 70px;
+}
+.login__subtitle {
+    font-size: 30px;
+    margin-left: 30px;
+}
+.login__googleSignIn {
+    width: 42%;
+    height: 45px;
+    flex-direction: row-reverse;
+    margin-left: 30px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px !important;
+    background-color: white;
+    cursor: pointer;
+    border-width: 1px;
+    border-color: gray !important;
+    font-weight: bold;
+    border-width: 1px !important;
+    border-radius: 30px !important;
+}
+.login__appleSignIn {
+    width: 42%;
+    height: 45px;
+    margin-left: 30px;
+    margin-bottom: 5px;
+    border-radius: 30px;
+    display: flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 20px;
+    background-color: white;
+    cursor: pointer;
+    border-width: 1px;
+    border-color: gray;
+}
+.login__line {
+    border-top: 0.2px solid rgb(63, 63, 63);
+    width: 42%;
+    margin-left: 30px;
+    text-align: center;
+}
+.login__or {
+    width: 5%;
+    margin-left: 22%;
+    position: relative;
+    top: -45px;
+    background-color: white;
+    text-align: center;
+    margin-bottom: -30px;
+}
+.login__phoneSignUp {
+    width: 42%;
+    height: 45px;
+    margin-left: 30px;
+    border-radius: 30px;
+    display: flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 20px;
+    background-color: rgb(29, 155, 240);
+    cursor: pointer;
+    color: white;
+    border-color: transparent;
+    margin-bottom: 0px;
+}
+.login__terms {
+    margin-left: 30px;
+    width: 40%;
+    font-size: 10px;
+    margin-bottom: 0px;
+}
+.login__haveAccount {
+    margin-left: 30px;
+    font-size: 18px;
+}
+.login__signin {
+    width: 42%;
+    height: 45px;
+    margin-left: 30px;
+    margin-bottom: 5px;
+    border-radius: 30px;
+    display: flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 20px;
+    background-color: white;
+    cursor: pointer;
+    color: rgb(29, 155, 240);
+    border-color: transparent;
+    margin-bottom: 0px;
+    border-width: 1px;
+    border-color: gray;
+}
+@media screen and (max-width: 1000px) {
+    .login {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .login_Logo {
+        flex: 5;
+        width: 100%;
+        object-fit: contain;
+        margin-top: 50px;
+    }
+    .login__twitterIconRight {
+        font-size: 50%;
+    }
+}

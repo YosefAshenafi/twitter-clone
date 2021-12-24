@@ -34,7 +34,6 @@
     border: none;
     padding: 20px;
     outline: none;
-    color: red;
 }
 ::placeholder {
     /* Chrome, Firefox, Opera, Safari 10.1+ */
@@ -53,19 +52,25 @@
 }
 .tweetBox__tweetMediaIcons {
     display: flex;
-    flex: 1;
     color: var(--twitter-color);
-    width: 200px !important;
+    /* width: 200px !important; */
     margin-left: 100px;
+    align-items: center;
+    margin-top: 25px;
 }
 .tweetBox__Icons {
     margin-left: 10px;
+    cursor: pointer;
 }
 .tweetBox__tweetButtonWrapper {
-    flex: 3;
+    display: flex;
+    align-items: center;
 }
 .tweetBox__tweetMedia {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+}
+.googleLogout {
+    border: none !important;
+    border-radius: 50% !important;
+    box-shadow: none !important;
 }

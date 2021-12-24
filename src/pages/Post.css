@@ -17,7 +17,8 @@
 }
 .post__contents > img {
     border-radius: 20px;
-    max-width: 600px;
+    max-width: 100%;
+    object-fit: contain;
 }
 .post__contents__top {
     display: flex;

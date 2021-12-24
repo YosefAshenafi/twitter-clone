@@ -23,7 +23,8 @@ function Login() {
         localStorage.setItem("name", result.name);
     };
     const onLoginFailure = () => {
-        console.log("not sucess");
+        console.log("Failure");
+        showProfile(false);
     };
     return (
         <div className="login">

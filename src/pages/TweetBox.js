@@ -43,7 +43,6 @@ function TweetBox() {
         setInputText("");
     };
     const logout = (res) => {
-        console.log("logged out");
         localStorage.setItem("profile", false);
         localStorage.setItem("username", "");
         localStorage.setItem("avatar", "");

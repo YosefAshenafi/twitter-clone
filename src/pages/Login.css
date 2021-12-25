@@ -6,7 +6,7 @@
 }
 .login_Logo {
     flex: 6;
-    background-image: url("../images/logoBackground.png");
+    background-image: url("./images/logoBackground.png");
     display: flex;
     background-size: contain;
     height: 100vh;

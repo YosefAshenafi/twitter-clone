@@ -11,7 +11,6 @@ function Feed() {
 
     useEffect(() => {
         db.collection("posts")
-            .where("username", "!=", null)
             .orderBy("time", "desc")
             .onSnapshot((snapshot) =>
                 setPosts(snapshot.docs.map((doc) => doc.data()))

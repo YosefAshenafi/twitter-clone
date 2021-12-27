@@ -11,11 +11,13 @@ function App() {
     const [username, setUsername] = useState("");
     const [avatar, setAvatar] = useState("");
     const [name, setName] = useState("");
-    console.log(username);
 
     useEffect(() => {
         const savedProfile =
-            localStorage.getItem("username") !== "" ? true : false;
+            localStorage.getItem("mytwitter_username") !== null ? true : false;
+
+        console.log(savedProfile);
+
         if (savedProfile) {
             showProfile(savedProfile);
             setAvatar(localStorage.getItem("avatar"));

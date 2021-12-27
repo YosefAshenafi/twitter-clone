@@ -12,13 +12,12 @@ function Login() {
         "984740848184-9lmdamivf3lgve6lbjpaj0p4kdlsnfrs.apps.googleusercontent.com";
     const onLoginSuccess = (res) => {
         var result = res.profileObj;
-        console.log(result);
         showProfile(true);
         setUsername(result.givenName);
         setAvatar(result.imageUrl);
         setName(result.name);
         localStorage.setItem("profile", true);
-        localStorage.setItem("username", result.givenName);
+        localStorage.setItem("mytwitter_username", result.givenName);
         localStorage.setItem("avatar", result.imageUrl);
         localStorage.setItem("name", result.name);
     };

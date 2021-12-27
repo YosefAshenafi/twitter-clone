@@ -34,7 +34,7 @@ function TweetBox() {
                 today.getHours() +
                 ":" +
                 today.getMinutes(),
-            username: "@" + username,
+            username: username === null ? "@anonymous" : "@" + username,
             verified: true,
             content: inputText,
             images: inputImage
@@ -44,7 +44,7 @@ function TweetBox() {
     };
     const logout = (res) => {
         localStorage.setItem("profile", false);
-        localStorage.setItem("username", "");
+        localStorage.setItem("mytwitter_username", "");
         localStorage.setItem("avatar", "");
         localStorage.setItem("name", "");
         showProfile(false);
